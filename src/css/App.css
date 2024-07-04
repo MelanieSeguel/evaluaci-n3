@@ -1,0 +1,76 @@
+.main-container {
+  max-width: 1200px;
+  background-color: rgb(220, 226, 245);
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+}
+
+@keyframes bgColorChange {
+  0% { background-color: rgb(237, 140, 140); }
+  25% { background-color: rgb(180, 166, 246); }
+  50% { background-color: rgb(200, 200, 244); }
+  75% { background-color: rgb(178, 223, 235); }
+  100% { background-color: rgb(249, 202, 202); }
+}
+
+.animacion-bg {
+  animation: bgColorChange 5s infinite;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@keyframes borderColorChange {
+  0% { border-color: rgb(237, 140, 140); }
+  25% { border-color: rgb(244, 234, 121); }
+  50% { border-color: rgb(112, 112, 243); }
+  75% { border-color: rgb(93, 167, 187); }
+  100% { border-color: rgb(242, 148, 148); }
+}
+
+.animacion-border {
+  border: 5px solid;
+  animation: borderColorChange 2s infinite;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.animacion-borderfoto {
+  border: 5px solid;
+  animation: borderColorChange 2s infinite;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favorito {
+  background-color: #baa1dd; /* cambia el color de fondo de la carta al marcar la estrella*/
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-morado {
+  background-color: #e7d1f7;
+  border-color: #c78cf1; 
+  color: #612acf; 
+}
+
+.btn-morado:hover {
+  background-color: #baa1dd; 
+  border-color: #550a8a; 
+}
+
+.page-item.custom-active .btn-morado {
+  background-color: #6f42c1; 
+  color: #fff; 
+  border-color: #6f42c1;
+}
